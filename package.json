@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "./src/app.js",
   "scripts": {
+    "start": "node ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
   },
@@ -11,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "mongoose": "^8.13.2",

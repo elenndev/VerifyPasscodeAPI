@@ -47,7 +47,7 @@ router.post('/validate-code/check-code', async (req, res)=>{
 router.post('/validate-code/generate-code', async (req, res)=>{
     const { email, username, emailContent } = req.body
     if( !email || !username || !emailContent || !emailContent.subject || !emailContent.text){
-        return res.status(400).json({erro: "Values not found"})
+        return res.status(400).json({error: "Values not found"})
     }
 
     const code = generateRandomCode()
