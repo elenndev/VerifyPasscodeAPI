@@ -3,9 +3,14 @@ This project provides a simple two-endpoint API for handling user passcode verif
 # 📌 Endpoint responses
 ## /validate-code/generate-code
   ```js
-    // sucess (status 200)
+    // sucess, a new passcode created (status 200)
     {
       "message": "validation code created",
+      "codeGeneration": 200
+    }
+  // sucess, the user passcode updated (status 200)
+    {
+      "message": "validation code updated",
       "codeGeneration": 200
     }
     // undefined values on the body request (status 400)
